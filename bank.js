@@ -13,7 +13,7 @@ let newdeposit = parseFloat(deposit.value);
 let totalDeposit = previousdeposit + newdeposit;
 deposit_amount.innerText = totalDeposit;
 let total = parseFloat(total_amount.innerText);
-let totalBalance = totalDeposit + total;
+let totalBalance = newdeposit + total;
 total_amount.innerText = totalBalance;
 deposit.value = "";
 })
@@ -33,7 +33,7 @@ document.getElementById("withdraw_btn").addEventListener('click' , function(){
     let totalWithdraw = previouswithdraw + newWithdraw;
     withdraw_amount.innerText = totalWithdraw;
     
-    let totalBalance =  total - totalWithdraw;
+    let totalBalance =  total - newWithdraw;
     total_amount.innerText = totalBalance;
     
 
