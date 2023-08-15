@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baaper Bank</title>
+</head>
+<body class=" bg-amber-100">
+    <div class="max-w-screen-xl mx-auto min-h-screen">
+        <h1 class="text-center text-4xl font-bold mt-6 text-gray-500 mb-10">Welcome to <span class="text-red-400">Baaper bank</span></h1>
+        <div class="grid grid-cols-3 gap-6 justify-center content-center ml-6 mt-10  mx-auto">
+            <div class="rounded-lg bg-lime-300 px-4 py-6 h-[160px] w-[85%]">
+                <h1 class="text-white text-2xl font-bold">Total Deposit</h1>
+                <h1 class="text-2xl font-bold text-white">$<span id="deposit_amount">00</span></h1>
+            </div>
+            <div class="rounded-lg bg-red-300 px-4 py-6 h-[160px] w-[85%]">
+                <h1 class="text-white text-2xl font-bold">Total Withdraw</h1>
+                <h1 class="text-2xl font-bold text-white">$<span id="withdraw_amount">00</span></h1>
+            </div>
+            <div class="rounded-lg bg-blue-300 px-4 py-6 h-[160px] w-[85%]">
+                <h1 class="text-white text-2xl font-bold">Total Balance</h1>
+                <h1 class="text-2xl font-bold text-white">$<span id="total_amount">1200</span></h1>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-6 justify-center content-center ml-6 mt-10  mx-auto">
+            <div class="rounded-lg bg-orange-300 px-4 py-6 h-[200px] w-[95%]">
+                <h1 class="text-white text-3xl font-bold">Deposit</h1>
+               <input type="text" id="deposit_input" placeholder="Enter the amount" class="w-[80%] rounded-lg px-4 py-2 border-none bg-orange-50 mt-6">
+               <button id="deposit_btn" class="rounded-lg bg-red-500 hover:bg-orange-400 hover:text-slate-600 transition-all text-white text-lg font-medium px-6 py-2 mt-5">Deposit</button>
+            </div>
+            
+            <div class="rounded-lg bg-emerald-400 px-4 py-6 h-[200px] w-[95%]">
+                <h1 class="text-white text-3xl font-bold">Withdraw</h1>
+               <input type="text" id="withdraw_input" placeholder="Enter the amount" class="w-[80%] rounded-lg px-4 py-2 border-none bg-orange-50 mt-6">
+               <button id="withdraw_btn" class="rounded-lg bg-blue-500 hover:bg-lime-400 hover:text-slate-600 transition-all text-white text-lg font-medium px-6 py-2 mt-5">Withdraw</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
